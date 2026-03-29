@@ -4,7 +4,7 @@
 """
 
 from quant_infra.get_data import get_stock_data_by_date, get_daily_basic
-from quant_infra.factor_analyze import evaluate_factor, group_plot, ic_plot, ic_half_life, evaluate_factor_pathways
+from quant_infra.factor_analyze import evaluate_factor, group_plot, ic_plot, ic_half_life, evaluate_factor_pathways, pathway_plot
 from quant_infra.factor_calc import calc_resid, calc_spec_vol
 from quant_infra.trade import simulate_trade
 from datetime import datetime
@@ -39,6 +39,7 @@ if __name__ == '__main__':
     # main()
     # group_plot('全市场', '月度', 'short', factor_table)
     # ic_plot('全市场', '月度', factor_table)
-    # ic_half_life(factor_table=factor_table, max_lag=200)
+    ic_half_life(factor_table=factor_table, max_lag=200)
 
-    evaluate_factor_pathways(factor_table=factor_table, fac_freq='月度', n_pathways=20, line='short', sample='全市场')
+    # evaluate_factor_pathways(factor_table=factor_table, trade_freq='月度', n_pathways=20, line='short', sample='全市场')
+    # pathway_plot('全市场', '月度', 'short', factor_table)
