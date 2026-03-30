@@ -3,7 +3,7 @@
 主程序 - 流程控制(完成一个因子后，存档)
 """
 
-from quant_infra.get_data import get_stock_data_by_date, get_daily_basic
+from quant_infra.get_data import get_stock_data_by_date, get_daily_basic, get_basic
 from quant_infra.factor_analyze import evaluate_factor, group_plot, ic_plot, ic_half_life, evaluate_factor_pathways, pathway_plot
 from quant_infra.factor_calc import calc_resid, calc_spec_vol
 from quant_infra.trade import simulate_trade
@@ -37,9 +37,10 @@ def main():
 
 if __name__ == '__main__':
     # main()
-    group_plot('全市场', '月度', 'short', factor_table)
+    # group_plot('全市场', '月度', 'short', factor_table)
     # ic_plot('全市场', '月度', factor_table)
     # ic_half_life(factor_table=factor_table, max_lag=200)
+    get_basic()
     # simulate_trade(factor_table=factor_table, trade_freq='月度', n_top=5, is_ascending=True, slippage_rate=0)
     # evaluate_factor_pathways(factor_table=factor_table, trade_freq='月度', n_pathways=20, line='short', sample='全市场')
     # pathway_plot('全市场', '月度', 'short', factor_table)
