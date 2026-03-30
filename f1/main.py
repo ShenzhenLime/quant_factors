@@ -37,7 +37,7 @@ def main():
 
     # 6. 因子评测
     print("\n因子评测...")
-    simulate_trade(factor_table='f1', fac_freq='月度', n_top=5, factor_direction='大', slippage_rate=0.005)
+    simulate_trade(factor_table='f1', fac_freq='月度', n_top=5, factor_direction='大', slippage_rate=0.5)
 
 
 if __name__ == '__main__':
