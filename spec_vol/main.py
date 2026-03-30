@@ -37,9 +37,9 @@ def main():
 
 if __name__ == '__main__':
     # main()
-    # group_plot('全市场', '月度', 'short', factor_table)
+    group_plot('全市场', '月度', 'short', factor_table)
     # ic_plot('全市场', '月度', factor_table)
     # ic_half_life(factor_table=factor_table, max_lag=200)
-    simulate_trade(factor_table=factor_table, trade_freq='月度', n_top=5, is_ascending=True, slippage_rate=0)
+    # simulate_trade(factor_table=factor_table, trade_freq='月度', n_top=5, is_ascending=True, slippage_rate=0)
     # evaluate_factor_pathways(factor_table=factor_table, trade_freq='月度', n_pathways=20, line='short', sample='全市场')
     # pathway_plot('全市场', '月度', 'short', factor_table)
